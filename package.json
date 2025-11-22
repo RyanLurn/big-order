@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier . --write --cache",
+    "format:check": "prettier . --check --cache"
+  },
+  "devDependencies": {
+    "@prettier/plugin-oxc": "0.0.5",
+    "prettier": "3.6.2",
+    "prettier-plugin-curly": "0.4.0"
   },
   "packageManager": "pnpm@10.23.0"
 }
