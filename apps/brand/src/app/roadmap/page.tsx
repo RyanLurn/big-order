@@ -1,3 +1,5 @@
+import type { LucideIcon } from "lucide-react";
+
 import {
   CheckCircle2,
   CircleDashed,
@@ -146,9 +148,8 @@ function FeatureCard({
 }: {
   status: "in-progress" | "planned" | "concept" | "done";
   description: string;
+  icon: LucideIcon;
   title: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  icon: any;
 }) {
   return (
     <Card className="bg-card/50">
