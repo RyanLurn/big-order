@@ -8,6 +8,7 @@ import {
   CardTitle,
   Card,
 } from "@/components/ui/card";
+import { ComingSoon } from "@/components/coming-soon";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -31,12 +32,23 @@ function HeroSection() {
           instantly.
         </p>
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
-          <Button className="text-base font-semibold h-12 px-8" size="lg">
-            Get Early Access
-          </Button>
-          <Button className="text-base h-12 px-8" variant="outline" size="lg">
-            View Demo
-          </Button>
+          <ComingSoon side="bottom">
+            <Button
+              className="text-base font-semibold h-12 px-8 hover:cursor-progress"
+              size="lg"
+            >
+              Get Early Access
+            </Button>
+          </ComingSoon>
+          <ComingSoon side="bottom">
+            <Button
+              className="text-base h-12 px-8 hover:cursor-progress"
+              variant="outline"
+              size="lg"
+            >
+              View Demo
+            </Button>
+          </ComingSoon>
         </div>
         <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-1">
