@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "format": "prettier . --write --cache",
-    "format:check": "prettier . --check --cache"
+    "format:check": "prettier . --check --cache",
+    "brand:dev": "pnpm --filter brand run dev"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "0.0.5",
