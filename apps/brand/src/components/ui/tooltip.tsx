@@ -43,22 +43,18 @@ function TooltipProvider({
   );
 }
 
-function Tooltip({
-  ...properties
-}: ComponentProps<typeof TooltipPrimitive.Root>) {
-  return (
-    <TooltipProvider>
-      <TooltipPrimitive.Root data-slot="tooltip" {...properties} />
-    </TooltipProvider>
-  );
-}
-
 function TooltipTrigger({
   ...properties
 }: ComponentProps<typeof TooltipPrimitive.Trigger>) {
   return (
     <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...properties} />
   );
+}
+
+function Tooltip({
+  ...properties
+}: ComponentProps<typeof TooltipPrimitive.Root>) {
+  return <TooltipPrimitive.Root data-slot="tooltip" {...properties} />;
 }
 
 export { TooltipProvider, TooltipTrigger, TooltipContent, Tooltip };
