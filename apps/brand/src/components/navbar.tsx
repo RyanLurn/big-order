@@ -21,7 +21,7 @@ function Navbar() {
               <Link href="/contact">Contact</Link>
             </Button>
             <ComingSoon side="bottom">
-              <Button className="ml-4 hover:cursor-progress">
+              <Button className="ml-4 hover:cursor-not-allowed">
                 Install App
               </Button>
             </ComingSoon>

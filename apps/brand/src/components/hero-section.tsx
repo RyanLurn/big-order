@@ -34,7 +34,7 @@ function HeroSection() {
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
           <ComingSoon side="bottom">
             <Button
-              className="text-base font-semibold h-12 px-8 hover:cursor-progress"
+              className="text-base font-semibold h-12 px-8 hover:cursor-not-allowed"
               size="lg"
             >
               Get Early Access
@@ -42,7 +42,7 @@ function HeroSection() {
           </ComingSoon>
           <ComingSoon side="bottom">
             <Button
-              className="text-base h-12 px-8 hover:cursor-progress"
+              className="text-base h-12 px-8 hover:cursor-not-allowed"
               variant="outline"
               size="lg"
             >
