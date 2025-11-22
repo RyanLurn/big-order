@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center">
             <Button variant="ghost" asChild>
-              <Link href="#features">Features</Link>
+              <Link href="/roadmap">Roadmap</Link>
             </Button>
             <Button variant="ghost" asChild>
               <Link href="#pricing">Pricing</Link>
