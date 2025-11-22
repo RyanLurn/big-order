@@ -1,3 +1,5 @@
-export default function Home() {
-  return <main>Home</main>;
+import { HeroSection } from "@/components/hero-section";
+
+export default function HomePage() {
+  return <HeroSection />;
 }

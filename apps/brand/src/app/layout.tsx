@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import { Geist_Mono, Geist } from "next/font/google";
 
 import "@/app/globals.css";
+import { SiteFooter } from "@/components/site-footer";
+import { Providers } from "@/components/providers";
+import { Navbar } from "@/components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  description: "A BigCommerce app development company",
-  title: "Big Order",
+  description:
+    "Let your customers edit their own orders. Reduce support tickets and improve customer satisfaction.",
+  title: "Big Order - Self-Service Order Edits for BigCommerce",
 };
 
 export default function RootLayout({
@@ -29,7 +33,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Providers>
+          <div className="relative flex min-h-screen flex-col bg-background">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </div>
+        </Providers>
       </body>
     </html>
   );
