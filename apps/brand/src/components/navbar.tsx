@@ -19,6 +19,9 @@ function Navbar() {
             <Button variant="ghost" asChild>
               <Link href="#pricing">Pricing</Link>
             </Button>
+            <Button variant="ghost" asChild>
+              <Link href="/contact">Contact</Link>
+            </Button>
             <Button className="ml-4" asChild>
               <Link href="https://login.bigcommerce.com">Install App</Link>
             </Button>
