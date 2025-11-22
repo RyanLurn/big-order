@@ -5,7 +5,10 @@
   "scripts": {
     "format": "prettier . --write --cache",
     "format:check": "prettier . --check --cache",
-    "brand:dev": "pnpm --filter brand run dev"
+    "brand:dev": "pnpm --filter brand run dev",
+    "brand:type-gen": "pnpm --filter brand run type-gen",
+    "brand:type-check": "pnpm --filter brand run type-check",
+    "brand:lint": "pnpm --filter brand run lint"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "0.0.5",
