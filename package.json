@@ -6,7 +6,8 @@
     "format": "prettier . --write --cache",
     "format:check": "prettier . --check --cache",
     "brand:dev": "pnpm --filter brand run dev",
-    "brand:type-gen": "pnpm --filter brand run type-gen"
+    "brand:type-gen": "pnpm --filter brand run type-gen",
+    "brand:type-check": "pnpm --filter brand run type-check"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "0.0.5",
